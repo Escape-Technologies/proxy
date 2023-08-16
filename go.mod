@@ -1,4 +1,4 @@
-module go-proxy
+module github.com/Escape-Technologies/proxy
 
 go 1.21
 
