@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  proxy:
+    image: escapetech/proxy
+    ports:
+      - 8080:8080
+    environment:
+      - ESCAPE_ORGANIZATION_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+      - ESCAPE_API_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
