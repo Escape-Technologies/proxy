@@ -15,3 +15,5 @@ go.work
 go-proxy
 main
 dist
+.vscode
+.idea
