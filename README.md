@@ -33,3 +33,7 @@ docker run -it --rm --name escape-proxy \
 
 You can find in the example folder more deployment examples.
 Feel free to contribute and add your own.
+
+## Usage
+
+You can now go to the escape documentation follow the steps to [use your custom proxy](https://docs.escape.tech/cookbooks/identifying-requests#using-a-custom-proxy).
