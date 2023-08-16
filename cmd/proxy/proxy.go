@@ -52,10 +52,7 @@ func hash(data string) []byte {
 
 func compare(hash []byte, data string) bool {
 	err := bcrypt.CompareHashAndPassword(hash, []byte(data))
-	if err != nil {
-		return false
-	}
-	return true
+	return err == nil
 }
 
 func start(addr string, port string, expected_hash []byte) {
