@@ -59,13 +59,13 @@ func compare(hash []byte, data string) bool {
 }
 
 func start(addr string, port string, expected_hash []byte) {
-	total := fmt.Sprintf("%s:%s", addr, port)
 	proxy := goproxy.NewProxyHttpServer()
 
 	auth.ProxyBasic(proxy, "realm", func(user, pass string) bool {
 		return compare(expected_hash, user + pass)
 	})
 
+	total := fmt.Sprintf("%s:%s", addr, port)
 	log.Printf("Listening on %s", total)
 	proxy.Verbose = true
 	log.Fatal(http.ListenAndServe(total, proxy))
